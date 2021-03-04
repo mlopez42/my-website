@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import {
   BrowserRouter as Router,
     Switch,
@@ -12,11 +12,13 @@ function App() {
   return (
     <div className="base-page">
         <SideMenu />
-        <Router>
-          <Switch>
-              <Route exact path="/"><HomePage /></Route>
-          </Switch>
-        </Router>
+        <div className="content-side">
+            <Router>
+              <Switch>
+                  <Route exact path="/"><HomePage /></Route>
+              </Switch>
+            </Router>
+        </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import {Component} from "react";
+import "./sideMenu.scss";
 
 export default class SideMenu extends Component {
 
