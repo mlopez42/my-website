@@ -6,17 +6,17 @@ import {
     Route
 } from "react-router-dom";
 import HomePage from "./pages/home/home";
+import SideMenu from "./components/sideMenu/sideMenu";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <div className="base-page">
+        <SideMenu />
+        <Router>
           <Switch>
-              <Route exact path="/">
-                  <HomePage />
-              </Route>
+              <Route exact path="/"><HomePage /></Route>
           </Switch>
-      </Router>
+        </Router>
     </div>
   );
 }
