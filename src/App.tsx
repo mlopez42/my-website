@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import HomePage from "./pages/home/home";
 import SideMenu from "./components/sideMenu/sideMenu";
+import CurriculumVitae from "./pages/curriculumVitae/curriculumVitae";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Router>
               <Switch>
                   <Route exact path="/"><HomePage /></Route>
+                  <Route exact path="/cv"><CurriculumVitae /></Route>
               </Switch>
             </Router>
         </div>
