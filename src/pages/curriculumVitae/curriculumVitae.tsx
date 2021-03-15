@@ -6,7 +6,12 @@ export default class CurriculumVitae extends Component {
     render() {
         return (
             <div className="cv-page">
-                CV PAGE
+                <div className="cv-column">
+
+                </div>
+                <div className="cv-column">
+
+                </div>
             </div>
         )
     }
