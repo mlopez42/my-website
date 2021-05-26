@@ -7,10 +7,24 @@ export default class CurriculumVitae extends Component {
         return (
             <div className="cv-page">
                 <div className="cv-column">
-
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>
                 </div>
                 <div className="cv-column">
-
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         )
