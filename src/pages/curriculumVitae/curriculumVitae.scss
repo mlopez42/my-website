@@ -3,7 +3,8 @@
   height: 100%;
   background-color: #e2e2e2;
   &-content {
-    margin: 0 1rem 0 1rem;
+    margin: 0 auto 0 auto;
+    max-width: 1200px;
     grid-column-gap: 2rem;
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -11,4 +12,20 @@
 }
 
 .cv-column {
+
+  &-content {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-row-gap: 0.5rem;
+    &-item {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-column-gap: 0.5rem;
+    }
+  }
+}
+
+p {
+  margin: 0.5rem 0 0.5rem 0;
 }
