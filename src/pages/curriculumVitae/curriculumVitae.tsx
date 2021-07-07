@@ -6,6 +6,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import ChatIcon from '@material-ui/icons/Chat';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import SchoolIcon from '@material-ui/icons/School';
+import CodeIcon from '@material-ui/icons/Code';
 import CvHeader from "../../components/cvHeader/cvHeader";
 
 export default class CurriculumVitae extends Component {
@@ -20,16 +21,52 @@ export default class CurriculumVitae extends Component {
                 <div className="cv-page-content">
                     <div className="cv-column">
                         <div>
+                            <CvTitleCategory comp={<CodeIcon />} title={'PROGRAMMATION'}></CvTitleCategory>
+                            <div className="cv-column-content">
+                                <div className="cv-column-content-item">
+                                    <div><b>Javascript</b></div>
+                                </div>
+                                <div className="cv-column-content-item">
+                                    <div><b>HTML/CSS</b></div>
+                                </div>
+                                <div className="cv-column-content-item">
+                                    <div><b>VueJs</b></div>
+                                </div>
+                                <div className="cv-column-content-item">
+                                    <div><b>ReactJs</b></div>
+                                </div>
+                                <div className="cv-column-content-item">
+                                    <div><b>Angular4+</b></div>
+                                </div>
+                                <div className="cv-column-content-item">
+                                    <div><b>C</b></div>
+                                </div>
+                                <div className="cv-column-content-item">
+                                    <div><b>C++</b></div>
+                                </div>
+                                <div className="cv-column-content-item">
+                                    <div><b>C#</b></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
                             <CvTitleCategory comp={<PersonIcon />} title={'A PROPOS'}></CvTitleCategory>
                             <div></div>
                         </div>
                         <div>
                             <CvTitleCategory comp={<PhoneIcon />} title={'CONTACT'}></CvTitleCategory>
-                            <div></div>
+                            <div>
+                                <p>91800 Boussy-Saint-Antoine</p>
+                                <p>06.98.54.78.25</p>
+                                <p>lopezmatias417@gmail.com</p>
+                            </div>
                         </div>
                         <div>
                             <CvTitleCategory comp={<ChatIcon />} title={'LANGUES'}></CvTitleCategory>
-                            <div></div>
+                            <div>
+                                <p>Anglais (Intermédiaire et technique)</p>
+                                <p>Espagnol (Parlé Intermédiaire)</p>
+                            </div>
                         </div>
                     </div>
                     <div className="cv-column">
