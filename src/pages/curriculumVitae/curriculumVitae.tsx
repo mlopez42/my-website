@@ -65,8 +65,6 @@ export default class CurriculumVitae extends Component {
                         <div>
                             <CvTitleCategory comp={<PhoneIcon />} title={'CONTACT'}></CvTitleCategory>
                             <div>
-                                <p>91800 Boussy-Saint-Antoine</p>
-                                <p>06.98.54.78.25</p>
                                 <p>lopezmatias417@gmail.com</p>
                             </div>
                         </div>
@@ -107,7 +105,7 @@ export default class CurriculumVitae extends Component {
                                     <div><div>D'Avril 2014</div><div>à juin 2014</div></div>
                                     <div>
                                         <b>Association Française contre la Myopathie</b>
-                                        <p>Technicien support informatique. Suivi des utilisateurs et prise en charge des problèmes informatiques, tests de mise en place d'un systeme d'exploitation de remplacement</p>
+                                        <p>Stagiaire technicien support informatique. Suivi des utilisateurs et prise en charge des problèmes informatiques, tests de mise en place d'un systeme d'exploitation de remplacement</p>
                                     </div>
                                 </div>
                             </div>
