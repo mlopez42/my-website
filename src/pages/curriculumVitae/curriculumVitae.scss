@@ -22,8 +22,18 @@
       display: grid;
       grid-template-columns: 1fr 4fr;
       grid-column-gap: 0.5rem;
+      &-comp {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-column-gap: 0.5rem;
+      }
     }
   }
+}
+
+.title-center {
+  display: flex;
+  align-items: center;
 }
 
 p {

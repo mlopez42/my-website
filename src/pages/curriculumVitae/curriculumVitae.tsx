@@ -8,6 +8,7 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import SchoolIcon from '@material-ui/icons/School';
 import CodeIcon from '@material-ui/icons/Code';
 import CvHeader from "../../components/cvHeader/cvHeader";
+import FiveDots from "../../components/fiveDots/fiveDots";
 
 export default class CurriculumVitae extends Component {
     constructor(props: Props<any>) {
@@ -23,29 +24,37 @@ export default class CurriculumVitae extends Component {
                         <div>
                             <CvTitleCategory comp={<CodeIcon />} title={'PROGRAMMATION'}></CvTitleCategory>
                             <div className="cv-column-content">
-                                <div className="cv-column-content-item">
-                                    <div><b>Javascript</b></div>
+                                <div className="cv-column-content-item-comp">
+                                    <div className="title-center"><b>Javascript</b></div>
+                                    <FiveDots rate={5}/>
                                 </div>
-                                <div className="cv-column-content-item">
-                                    <div><b>HTML/CSS</b></div>
+                                <div className="cv-column-content-item-comp">
+                                    <div className="title-center"><b>HTML/CSS</b></div>
+                                    <FiveDots rate={5}/>
                                 </div>
-                                <div className="cv-column-content-item">
-                                    <div><b>VueJs</b></div>
+                                <div className="cv-column-content-item-comp">
+                                    <div className="title-center"><b>TypeScript</b></div>
+                                    <FiveDots rate={4}/>
                                 </div>
-                                <div className="cv-column-content-item">
-                                    <div><b>ReactJs</b></div>
+                                <div className="cv-column-content-item-comp">
+                                    <div className="title-center"><b>VueJs</b></div>
+                                    <FiveDots rate={4}/>
                                 </div>
-                                <div className="cv-column-content-item">
-                                    <div><b>Angular4+</b></div>
+                                <div className="cv-column-content-item-comp">
+                                    <div className="title-center"><b>ReactJs</b></div>
+                                    <FiveDots rate={4}/>
                                 </div>
-                                <div className="cv-column-content-item">
-                                    <div><b>C</b></div>
+                                <div className="cv-column-content-item-comp">
+                                    <div className="title-center"><b>Angular4+</b></div>
+                                    <FiveDots rate={3}/>
                                 </div>
-                                <div className="cv-column-content-item">
-                                    <div><b>C++</b></div>
+                                <div className="cv-column-content-item-comp">
+                                    <div className="title-center"><b>C</b></div>
+                                    <FiveDots rate={3}/>
                                 </div>
-                                <div className="cv-column-content-item">
-                                    <div><b>C#</b></div>
+                                <div className="cv-column-content-item-comp">
+                                    <div className="title-center"><b>C#</b></div>
+                                    <FiveDots rate={2}/>
                                 </div>
                             </div>
                         </div>
