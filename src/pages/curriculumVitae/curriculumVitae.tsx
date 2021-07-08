@@ -111,7 +111,7 @@ export default class CurriculumVitae extends Component {
                             </div>
                         </div>
                         <div>
-                            <CvTitleCategory comp={<SchoolIcon />} title={'FORMATION'} /`>
+                            <CvTitleCategory comp={<SchoolIcon />} title={'FORMATION'} />
                             <div className="cv-column-content">
                                 <div className="cv-column-content-item">
                                     <div>Depuis 2015</div>
