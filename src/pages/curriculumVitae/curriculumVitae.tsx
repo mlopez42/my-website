@@ -22,7 +22,7 @@ export default class CurriculumVitae extends Component {
                 <div className="cv-page-content">
                     <div className="cv-column">
                         <div>
-                            <CvTitleCategory comp={<CodeIcon />} title={'PROGRAMMATION'}></CvTitleCategory>
+                            <CvTitleCategory comp={<CodeIcon />} title={'PROGRAMMATION'} />
                             <div className="cv-column-content">
                                 <div className="cv-column-content-item-comp">
                                     <div className="title-center"><b>Javascript</b></div>
@@ -59,17 +59,17 @@ export default class CurriculumVitae extends Component {
                             </div>
                         </div>
                         <div>
-                            <CvTitleCategory comp={<PersonIcon />} title={'A PROPOS'}></CvTitleCategory>
+                            <CvTitleCategory comp={<PersonIcon />} title={'A PROPOS'} />
                             <div></div>
                         </div>
                         <div>
-                            <CvTitleCategory comp={<PhoneIcon />} title={'CONTACT'}></CvTitleCategory>
+                            <CvTitleCategory comp={<PhoneIcon />} title={'CONTACT'} />
                             <div>
                                 <p>lopezmatias417@gmail.com</p>
                             </div>
                         </div>
                         <div>
-                            <CvTitleCategory comp={<ChatIcon />} title={'LANGUES'}></CvTitleCategory>
+                            <CvTitleCategory comp={<ChatIcon />} title={'LANGUES'} />
                             <div>
                                 <p>Anglais (Intermédiaire et technique)</p>
                                 <p>Espagnol (Parlé Intermédiaire)</p>
@@ -78,7 +78,7 @@ export default class CurriculumVitae extends Component {
                     </div>
                     <div className="cv-column">
                         <div>
-                            <CvTitleCategory comp={<BusinessCenterIcon />} title={'EXPERIENCES'}></CvTitleCategory>
+                            <CvTitleCategory comp={<BusinessCenterIcon />} title={'EXPERIENCES'} />
                             <div className="cv-column-content">
                                 <div className="cv-column-content-item">
                                     <div><div>D'Avril 2019</div><div>à Juin 2020</div></div>
@@ -111,7 +111,7 @@ export default class CurriculumVitae extends Component {
                             </div>
                         </div>
                         <div>
-                            <CvTitleCategory comp={<SchoolIcon />} title={'FORMATION'}></CvTitleCategory>
+                            <CvTitleCategory comp={<SchoolIcon />} title={'FORMATION'} /`>
                             <div className="cv-column-content">
                                 <div className="cv-column-content-item">
                                     <div>Depuis 2015</div>
