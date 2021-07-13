@@ -2,4 +2,9 @@
   width: 15rem;
   background-color: #252d8a;
   color: #e2e2e2;
+  display: flex;
+  flex-direction: column;
+  &-href {
+    color: white;
+  }
 }
