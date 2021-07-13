@@ -12,15 +12,15 @@ import CurriculumVitae from "./pages/curriculumVitae/curriculumVitae";
 function App() {
   return (
     <div className="base-page">
-        <SideMenu />
-        <div className="content-side">
-            <Router>
-              <Switch>
+        <Router>
+            <SideMenu />
+            <div className="content-side">
+                <Switch>
                   <Route exact path="/"><HomePage /></Route>
                   <Route exact path="/cv"><CurriculumVitae /></Route>
-              </Switch>
-            </Router>
-        </div>
+                </Switch>
+            </div>
+        </Router>
     </div>
   );
 }
