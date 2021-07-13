@@ -12,12 +12,12 @@ export default class FiveDots extends Component<MyProps> {
         super(props);
     }
 
-    get filed() {
-        return <FiberManualRecordIcon className="five-dots-reskin" />;
+    filed(id: number) {
+        return <FiberManualRecordIcon className="five-dots-reskin" key={id} />;
     }
 
-    get outlined() {
-        return <FiberManualRecordOutlinedIcon className="five-dots-reskin" />;
+    outlined(id: number) {
+        return <FiberManualRecordOutlinedIcon className="five-dots-reskin" key={id} />;
     }
 
     get rating(): number {
@@ -29,11 +29,11 @@ export default class FiveDots extends Component<MyProps> {
         let ret: any = [];
         for (let t = this.rating; cpt > 0; cpt--){
             if (t > 0) {
-                ret.push(this.filed);
+                ret.push(this.filed(cpt));
                 t--;
             }
             else
-                ret.push(this.outlined);
+                ret.push(this.outlined(cpt));
         }
         return ret;
     }
