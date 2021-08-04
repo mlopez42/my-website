@@ -1,0 +1,29 @@
+.cv-header {
+  padding: 2rem 0 2rem 0;
+  &-content {
+    max-width: 1300px;
+    background-color: #252d8a;
+    height: 12rem;
+    margin: auto;
+    border-radius: 10px;
+    &-name {
+      max-width: 80%;
+      margin: auto;
+      font-size: x-large;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 30%;
+    }
+    &-title {
+      display: flex;
+      margin: auto;
+      max-width: 80%;
+      height: 70%;
+      align-items: center;
+      justify-content: center;
+      font-size: xx-large;
+    }
+  }
+  color: white;
+}

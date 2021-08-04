@@ -1,7 +1,7 @@
 import {Component, Props} from "react";
 import "./curriculumVitae.scss";
 import CvTitleCategory from "../../components/cvTitleCategory/cvTitleCategory";
-// import PersonIcon from '@material-ui/icons/Person';
+import PersonIcon from '@material-ui/icons/Person';
 import PhoneIcon from '@material-ui/icons/Phone';
 import ChatIcon from '@material-ui/icons/Chat';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
@@ -21,6 +21,10 @@ export default class CurriculumVitae extends Component {
                 <CvHeader />
                 <div className="cv-page-content">
                     <div className="cv-column">
+                        <div>
+                            <CvTitleCategory comp={<PersonIcon />} title={'A PROPOS'} />
+                            <div></div>
+                        </div>
                         <div>
                             <CvTitleCategory comp={<CodeIcon />} title={'PROGRAMMATION'} />
                             <div className="cv-column-content">
@@ -58,10 +62,6 @@ export default class CurriculumVitae extends Component {
                                 </div>
                             </div>
                         </div>
-                        {/*<div>*/}
-                        {/*    <CvTitleCategory comp={<PersonIcon />} title={'A PROPOS'} />*/}
-                        {/*    <div></div>*/}
-                        {/*</div>*/}
                         <div>
                             <CvTitleCategory comp={<PhoneIcon />} title={'CONTACT'} />
                             <div>
