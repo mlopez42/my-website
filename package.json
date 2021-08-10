@@ -45,6 +45,9 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.1.7"
+    "@types/react-router-dom": "^5.1.7",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "webpack": "4.44.2"
   }
 }

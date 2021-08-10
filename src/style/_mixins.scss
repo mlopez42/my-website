@@ -1,0 +1,46 @@
+@import 'defaults';
+
+
+@mixin sm {
+  @media (min-width: #{$mobile}px) {
+	@content;
+  }
+}
+
+@mixin smg {
+  @media (min-width: #{$mobile-big}px) {
+	@content;
+  }
+}
+
+// Medium devices
+@mixin mds {
+  @media (min-width: #{$tablet-sm}px) {
+	@content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$tablet}px) {
+	@content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$desktop}px) {
+	@content;
+  }
+}
+
+@mixin xlg {
+  @media (min-width: #{$desktop-big}px) {
+	@content;
+  }
+}
+
+@mixin rwd($screen) {
+  @media (min-width: $screen+'px') {
+	@content;
+  }
+}
