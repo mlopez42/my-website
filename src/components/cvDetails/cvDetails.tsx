@@ -6,7 +6,7 @@ export default class CvDetails extends Component {
     render() {
         return (
             <div className="cv-details-container">
-                Details
+                <p>Details</p>
             </div>
         )
     }

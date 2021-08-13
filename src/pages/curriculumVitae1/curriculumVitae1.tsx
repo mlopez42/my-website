@@ -11,9 +11,6 @@ import CvHeader from "../../components/cvHeader/cvHeader";
 import FiveDots from "../../components/fiveDots/fiveDots";
 
 export default class CurriculumVitae1 extends Component {
-    // constructor(props: Props<any>) {
-    //     super(props);
-    // }
 
     render() {
         return (
