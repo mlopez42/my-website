@@ -7,9 +7,9 @@ type MyProps = {
 }
 
 export default class CvTitleCategory extends Component<MyProps> {
-    constructor(props: MyProps) {
-        super(props);
-    }
+    // constructor(props: MyProps) {
+    //     super(props);
+    // }
 
     icon() {
         return this.props.comp;

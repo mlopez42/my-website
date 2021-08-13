@@ -8,9 +8,9 @@ type MyProps = {
 }
 
 export default class FiveDots extends Component<MyProps> {
-    constructor(props: MyProps) {
-        super(props);
-    }
+    // constructor(props: MyProps) {
+    //     super(props);
+    // }
 
     filed(id: number) {
         return <FiberManualRecordIcon className="five-dots-reskin" key={id} />;

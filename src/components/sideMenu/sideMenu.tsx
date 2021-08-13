@@ -8,10 +8,10 @@ type MyProps = {
 }
 
 export default class SideMenu extends Component<MyProps> {
-    constructor(props: MyProps) {
-        super(props);
-        console.log(props.sideStyle);
-    }
+    // constructor(props: MyProps) {
+    //     super(props);
+    //     console.log(props.sideStyle);
+    // }
 
     get sideMenu() {
         switch (this.props.sideStyle) {
