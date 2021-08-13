@@ -1,5 +1,5 @@
-import {Component, Props} from "react";
-import "./curriculumVitae.scss";
+import {Component /*, Props*/} from "react";
+import "./curriculumVitae1.scss";
 import CvTitleCategory from "../../components/cvTitleCategory/cvTitleCategory";
 import PersonIcon from '@material-ui/icons/Person';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -10,10 +10,10 @@ import CodeIcon from '@material-ui/icons/Code';
 import CvHeader from "../../components/cvHeader/cvHeader";
 import FiveDots from "../../components/fiveDots/fiveDots";
 
-export default class CurriculumVitae extends Component {
-    constructor(props: Props<any>) {
-        super(props);
-    }
+export default class CurriculumVitae1 extends Component {
+    // constructor(props: Props<any>) {
+    //     super(props);
+    // }
 
     render() {
         return (
@@ -23,7 +23,7 @@ export default class CurriculumVitae extends Component {
                     <div className="cv-column">
                         <div>
                             <CvTitleCategory comp={<PersonIcon />} title={'A PROPOS'} />
-                            <div></div>
+                            <div>test</div>
                         </div>
                         <div>
                             <CvTitleCategory comp={<CodeIcon />} title={'PROGRAMMATION'} />
@@ -115,7 +115,7 @@ export default class CurriculumVitae extends Component {
                             <div className="cv-column-content">
                                 <div className="cv-column-content-item">
                                     <div>Depuis 2015</div>
-                                    <div><b>Étudiant à l'école 42</b><p>(<a href="https://www.42.fr" target="_blank">www.42.fr</a>)</p></div>
+                                    <div><b>Étudiant à l'école 42</b><p>( <a href="https://www.42.fr" target="_blank" rel="noreferrer">www.42.fr</a> )</p></div>
                                 </div>
                                 <div className="cv-column-content-item">
                                     <div>2014</div>

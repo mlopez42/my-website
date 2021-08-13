@@ -7,22 +7,36 @@ import {
 } from "react-router-dom";
 import HomePage from "./pages/home/home";
 import SideMenu from "./components/sideMenu/sideMenu";
-import CurriculumVitae from "./pages/curriculumVitae/curriculumVitae";
+import CurriculumVitae1 from "./pages/curriculumVitae1/curriculumVitae1";
+import CurriculumVitae2 from "./pages/curriculumVitae2/curriculumVitae2";
 
 function App() {
-  return (
-    <div className="base-page">
+    let cvStyle: number = 1;
+
+    function cv() {
+        switch (cvStyle) {
+            case 0:
+                return <CurriculumVitae1 />;
+            case 1:
+                return <CurriculumVitae2 />;
+        }
+    }
+
+    return (
+    <div className={cvStyle === 0 ? "base-page" : "base-page-2"}>
         <Router>
-            <SideMenu />
+            <SideMenu sideStyle={cvStyle} />
             <div className="content-side">
                 <Switch>
                   <Route exact path="/"><HomePage /></Route>
-                  <Route exact path="/cv"><CurriculumVitae /></Route>
+                  <Route exact path="/cv">
+                      {cv}
+                  </Route>
                 </Switch>
             </div>
         </Router>
     </div>
-  );
+    );
 }
 
 export default App;
