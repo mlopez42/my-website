@@ -5,7 +5,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import HomePage from "./pages/home/home";
+// import HomePage from "./pages/home/home";
 import SideMenu from "./components/sideMenu/sideMenu";
 import CurriculumVitae1 from "./pages/curriculumVitae1/curriculumVitae1";
 import CurriculumVitae2 from "./pages/curriculumVitae2/curriculumVitae2";
@@ -28,8 +28,8 @@ function App() {
             <SideMenu sideStyle={cvStyle} />
             <div className="content-side">
                 <Switch>
-                  <Route exact path="/"><HomePage /></Route>
-                  <Route exact path="/cv">
+                  {/*<Route exact path="/"><HomePage /></Route>*/}
+                  <Route exact path="/">
                       {cv}
                   </Route>
                 </Switch>
