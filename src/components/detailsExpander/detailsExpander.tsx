@@ -6,6 +6,7 @@ export default class DetailsExpander extends Component {
     render() {
         return (
             <div className="">
+                
             </div>
         )
     }
